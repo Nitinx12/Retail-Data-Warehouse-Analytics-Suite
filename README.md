@@ -54,3 +54,5 @@ The project solves the challenge of deriving actionable business insights from r
 │       └── Performance_Analysis.sql  # YoY benchmarking
 └── README.md
 ```
+## ⚙️ Installation & Usage
+To replicate this analysis, follow these steps:
