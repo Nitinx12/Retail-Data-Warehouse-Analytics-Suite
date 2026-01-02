@@ -74,8 +74,7 @@ To replicate this analysis, follow these steps:
 4.  **Run Analysis:**
     * **For SQL Analysis:** Execute the queries in `Customers_report.sql` using a SQL client like DBeaver, pgadmin4 or `psql`.
       ```sql
-      CREATE VIEW Customers_report AS 
-WITH basequery AS (
+      WITH basequery AS (
 	SELECT
 		C.customer_key,
 		S.order_number,
@@ -140,6 +139,7 @@ Customer_agg AS (
 			ELSE ROUND(total_sales / life_span,2)
 		END AS avg_monthly_spend
 	FROM Customer_agg
+
 		```
 
 
