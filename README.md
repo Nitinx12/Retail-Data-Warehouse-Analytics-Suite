@@ -32,3 +32,22 @@ The project solves the challenge of deriving actionable business insights from r
 * Libraries: Pandas, SQLAlchemy, Psycopg2
 * Database: PostgreSQL
 * Data Formats: CSV, Structured Tables
+
+## 📊 Project Structure
+├── data/
+│   ├── customers.csv          # Raw customer demographic data
+│   ├── products.csv           # Product catalog and pricing data
+│   └── sales.csv              # Transactional sales data
+├── docs/
+│   └── Questions.pdf          # Business requirements and analytical objectives
+├── src/
+│   ├── etl/
+│   │   └── Load_Data_in_database.py  # Python script for database ingestion
+│   └── analysis/
+│       ├── Changes_over_time.sql     # MoM growth calculations
+│       ├── Cumulative_Analysis.sql   # Rolling averages and running totals
+│       ├── Customers_report.sql      # Customer segmentation logic
+│       ├── Data_Segmentation.sql     # Inventory cost segmentation
+│       ├── Part_To_Whole_Analysis.sql# Category revenue contribution
+│       └── Performance_Analysis.sql  # YoY benchmarking
+└── README.md
