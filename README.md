@@ -140,4 +140,4 @@ Customer_agg AS (
 			ELSE ROUND(total_sales / life_span,2)
 		END AS avg_monthly_spend
 	FROM Customer_agg
-		```
+```
