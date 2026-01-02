@@ -71,3 +71,5 @@ To replicate this analysis, follow these steps:
         ```bash
        Load_Data_in_database.py
         ```
+4.  **Run Analysis:**
+    * **For SQL Analysis:** Execute the queries in `Customers_report.sql` using a SQL client like DBeaver, pgadmin4 or `psql`.
