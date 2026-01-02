@@ -35,6 +35,7 @@ The project solves the challenge of deriving actionable business insights from r
 
 ## 📊 Project Structure
 
+```
 ├── data/
 │   ├── customers.csv          # Raw customer demographic data
 │   ├── products.csv           # Product catalog and pricing data
@@ -52,3 +53,4 @@ The project solves the challenge of deriving actionable business insights from r
 │       ├── Part_To_Whole_Analysis.sql# Category revenue contribution
 │       └── Performance_Analysis.sql  # YoY benchmarking
 └── README.md
+```
