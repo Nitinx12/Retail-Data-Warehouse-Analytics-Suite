@@ -14,3 +14,15 @@ The project solves the challenge of deriving actionable business insights from r
 * SQL (PostgreSQL)
 * Pandas
 * Sqlalchemy
+
+## 🚀 Features
+
+- **Automated Data Ingestion:** A robust Python ETL script utilizing Pandas and SQLAlchemy to ingest raw CSV data into a relational database.
+
+Advanced Sales Analytics: Implementation of Window Functions and Common Table Expressions (CTEs) to calculate Month-Over-Month (MoM) growth and Year-Over-Year (YoY) trends.
+
+Customer Segmentation: Logic to profile customers based on purchasing behavior, age groups, and lifecycle span (VIP vs. New vs. Regular).
+
+Inventory Optimization: Price bracketing and segmentation analysis to assist in inventory distribution strategies.
+
+Cumulative Performance Tracking: Recursive SQL queries to track running totals and moving averages (7-day rolling average) for daily revenue.
