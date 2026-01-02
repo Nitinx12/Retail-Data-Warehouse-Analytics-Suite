@@ -61,3 +61,7 @@ To replicate this analysis, follow these steps:
     ```bash
     git clone [https://github.com/Nitinx12/Retail-Data-Warehouse-Analytics-Suite]
     ```
+2.  **Set Up PostgreSQL Database:**
+    * Ensure you have PostgreSQL installed.
+    * Create a new database (e.g., `Datawarehouseanalytics`).
+    * Update the connection string in the `Load_Data_in_database.py` file with your database credentials.
