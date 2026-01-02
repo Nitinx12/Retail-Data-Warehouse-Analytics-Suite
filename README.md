@@ -28,10 +28,7 @@ The project solves the challenge of deriving actionable business insights from r
 - **Cumulative Performance Tracking:** Recursive SQL queries to track running totals and moving averages (7-day rolling average) for daily revenue.
 
 ## 🧑‍💻 Tech Stack
-Language: Python 3.x, SQL
-
-Libraries: Pandas, SQLAlchemy, Psycopg2
-
-Database: PostgreSQL
-
-Data Formats: CSV, Structured Tables
+* Language: Python 3.x, SQL
+* Libraries: Pandas, SQLAlchemy, Psycopg2
+* Database: PostgreSQL
+* Data Formats: CSV, Structured Tables
