@@ -1,1 +1,1 @@
-# Retail-Data-Warehouse-Analytics-Suite
+# Retail Data Warehouse Analytics Suite
