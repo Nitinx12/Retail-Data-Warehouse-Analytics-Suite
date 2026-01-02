@@ -34,6 +34,7 @@ The project solves the challenge of deriving actionable business insights from r
 * Data Formats: CSV, Structured Tables
 
 ## 📊 Project Structure
+
 ├── data/
 │   ├── customers.csv          # Raw customer demographic data
 │   ├── products.csv           # Product catalog and pricing data
