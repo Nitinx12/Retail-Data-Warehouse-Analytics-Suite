@@ -141,3 +141,10 @@ Customer_agg AS (
 		END AS avg_monthly_spend
 	FROM Customer_agg
 ```
+
+## 📞 Contact Information
+
+* **LinkedIn:** [https://www.linkedin.com/in/nitin-k-220651351/](https://www.linkedin.com/in/nitin-k-220651351/)
+* **GitHub:** [https://github.com/Nitinx12](https://github.com/Nitinx12)
+* **Email:** Nitin321x@gmail.com
+
