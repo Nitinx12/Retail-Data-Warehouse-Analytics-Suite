@@ -65,3 +65,9 @@ To replicate this analysis, follow these steps:
     * Ensure you have PostgreSQL installed.
     * Create a new database (e.g., `Datawarehouseanalytics`).
     * Update the connection string in the `Load_Data_in_database.py` file with your database credentials.
+3.  **Load Data:**
+    * Place the 3 `.csv` files (`customers`, `products.csv`, etc.) in the `data/` directory.
+    * Run the Python script to load the data into your PostgreSQL database:
+        ```bash
+       Load_Data_in_database.py
+        ```
