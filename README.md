@@ -56,3 +56,8 @@ The project solves the challenge of deriving actionable business insights from r
 ```
 ## ⚙️ Installation & Usage
 To replicate this analysis, follow these steps:
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/Nitinx12/Retail-Data-Warehouse-Analytics-Suite]
+    ```
