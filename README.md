@@ -26,3 +26,12 @@ The project solves the challenge of deriving actionable business insights from r
 - **Inventory Optimization:** Price bracketing and segmentation analysis to assist in inventory distribution strategies.
 
 - **Cumulative Performance Tracking:** Recursive SQL queries to track running totals and moving averages (7-day rolling average) for daily revenue.
+
+## 🧑‍💻 Tech Stack
+Language: Python 3.x, SQL
+
+Libraries: Pandas, SQLAlchemy, Psycopg2
+
+Database: PostgreSQL
+
+Data Formats: CSV, Structured Tables
