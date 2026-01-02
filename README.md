@@ -142,6 +142,11 @@ Customer_agg AS (
 	FROM Customer_agg
 ```
 
+
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
 ## 📞 Contact Information
 
 * **LinkedIn:** [https://www.linkedin.com/in/nitin-k-220651351/](https://www.linkedin.com/in/nitin-k-220651351/)
