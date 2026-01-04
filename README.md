@@ -25,6 +25,8 @@ The project follows a standard Extract, Load, Transform (ELT/ETL) and Visualizat
 
 ## Key Business Insights & SQL Logic
 
+#1.Product Performance & Trends
+
 - **Goal:** Evaluate products against historical averages and track Year-Over-Year (YoY) trends.
   
 - **Technique:** Used Window Functions (AVG() OVER, LAG() OVER) to compare current sales vs. previous year and average sales.
