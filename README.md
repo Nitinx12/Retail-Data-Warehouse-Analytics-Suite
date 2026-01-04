@@ -10,6 +10,7 @@ It includes building a data warehouse using `PostgreSQL`, performing advanced SQ
 
 The goal was to answer critical business questions regarding product performance, customer segmentation, and sales momentum.
 
+
 ### Built With
 * Python
 * SQL (PostgreSQL)
