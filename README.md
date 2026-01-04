@@ -10,7 +10,7 @@ It includes building a data warehouse using `PostgreSQL`, performing advanced SQ
 
 The goal was to answer critical business questions regarding product performance, customer segmentation, and sales momentum.
 
-## 🚀 Architecture & Workflow
+## Architecture & Workflow
 The project follows a standard Extract, Load, Transform (ELT/ETL) and Visualization workflow:
 
 1.  **Data Ingestion (ETL):** -   Raw data (`.csv`) is loaded into a PostgreSQL database using Python (`Pandas` & `SQLAlchemy`).
@@ -18,7 +18,7 @@ The project follows a standard Extract, Load, Transform (ELT/ETL) and Visualizat
 3.  **Data Analysis (SQL):** -   Complex SQL queries are written to solve specific business problems (e.g., YoY growth, running totals, segmentation).
 4.  **Reporting (Power BI):** -   A dynamic dashboard visualizes the SQL outputs to track Customer Segments, Sales Trends, and Product Mix.
 
-## 🛠️ Tech Stack
+## Tech Stack
 * **Language:** Python (Pandas, SQLAlchemy)
 * **Database:** PostgreSQL
 * **Query Language:** SQL (Window Functions, CTEs, Aggregations)
@@ -43,7 +43,7 @@ The project follows a standard Extract, Load, Transform (ELT/ETL) and Visualizat
 
 - **Outcome:** The `Power BI` dashboard highlights that the 50+ Age Group contributes significantly to total revenue.
 
-## 📊 Project Structure
+## Project Structure
 
 ```
 Retail-Data-Warehouse-Analytics-Suite/
@@ -190,11 +190,11 @@ Customer_agg AS (
 ```
 
 
-## 📜 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## 📞 Contact Information
+## Contact Information
 
 * **LinkedIn:** [https://www.linkedin.com/in/nitin-k-220651351/](https://www.linkedin.com/in/nitin-k-220651351/)
 * **GitHub:** [https://github.com/Nitinx12](https://github.com/Nitinx12)
