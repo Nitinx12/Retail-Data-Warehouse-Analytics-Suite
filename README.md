@@ -37,14 +37,9 @@ The project follows a standard Extract, Load, Transform (ELT/ETL) and Visualizat
 
 - **Goal:** Profile customers based on purchasing behavior
 
-- **Logic:**
-  -*VIP*: High spending (> avg) AND recent activity.
+- **Logic:** `VIP` High spending (> avg) AND recent activity, `Regular` Consistent shoppers, `New` First purchase within the last 30-90 days
 
-## 🧑‍💻 Tech Stack
-* Language: Python 3.x, SQL
-* Libraries: Pandas, SQLAlchemy, Psycopg2
-* Database: PostgreSQL
-* Data Formats: CSV, Structured Tables
+- **Outcome:** The `Power BI` dashboard highlights that the 50+ Age Group contributes significantly to total revenue.
 
 ## 📊 Project Structure
 
