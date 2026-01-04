@@ -33,9 +33,12 @@ The project follows a standard Extract, Load, Transform (ELT/ETL) and Visualizat
 
 - **Outcome:** Identified products performing "Above Average" and flagged those with declining sales momentum.
 
-- **Inventory Optimization:** Price bracketing and segmentation analysis to assist in inventory distribution strategies.
+**2.Customer Segmentation**
 
-- **Cumulative Performance Tracking:** Recursive SQL queries to track running totals and moving averages (7-day rolling average) for daily revenue.
+- **Goal:** Profile customers based on purchasing behavior
+
+- **Logic:**
+  -*VIP*: High spending (> avg) AND recent activity.
 
 ## 🧑‍💻 Tech Stack
 * Language: Python 3.x, SQL
