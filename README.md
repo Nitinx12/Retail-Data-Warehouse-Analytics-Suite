@@ -36,23 +36,44 @@ The project solves the challenge of deriving actionable business insights from r
 ## 📊 Project Structure
 
 ```
-├── data/
-│   ├── customers.csv          # Raw customer demographic data
-│   ├── products.csv           # Product catalog and pricing data
-│   └── sales.csv              # Transactional sales data
-├── docs/
-│   └── Questions.pdf          # Business requirements and analytical objectives
-├── src/
-│   ├── etl/
-│   │   └── Load_Data_in_database.py  # Python script for database ingestion
-│   └── analysis/
-│       ├── Changes_over_time.sql     # MoM growth calculations
-│       ├── Cumulative_Analysis.sql   # Rolling averages and running totals
-│       ├── Customers_report.sql      # Customer segmentation logic
-│       ├── Data_Segmentation.sql     # Inventory cost segmentation
-│       ├── Part_To_Whole_Analysis.sql# Category revenue contribution
-│       └── Performance_Analysis.sql  # YoY benchmarking
-└── README.md
+Retail-Data-Warehouse-Analytics-Suite/
+│
+├── data/                            # Data storage (gitignored in real projects)
+│   ├── raw/                         # Raw CSV files from the 'Dataset' folder
+│   │   ├── customers.csv
+│   │   ├── products.csv
+│   │   └── sales.csv
+│   └── processed/                   # Stores processed/cleaned data if needed
+│
+├── src/                             # Source code for the project
+│   ├── etl/                         # Extract, Transform, Load scripts
+│   │   ├── __init__.py
+│   │   └── load_data.py             # Refactored 'Load_Data_in_database.py'
+│   │
+│   └── sql/                         # SQL scripts (from 'Advanced Data Analytics')
+│       ├── changes_over_time.sql
+│       ├── cumulative_analysis.sql
+│       ├── customer_report.sql
+│       ├── data_segmentation.sql
+│       ├── part_to_whole_analysis.sql
+│       └── performance_analysis.sql
+│
+├── notebooks/                       # Jupyter Notebooks
+│   ├── eda/                         # From 'Exploratory Data analysis (EDA)' folder
+│   │   └── exploratory_analysis.ipynb
+│   └── prototyping/                 # Sandbox for testing code before moving to src/
+│
+├── dashboards/                      # Power BI files
+│   └── retail_dashboard.pbix        # From 'Power BI Dashboard' folder
+│
+├── docs/                            # Documentation and Reference files
+│   ├── questions.pdf                # Business requirements document
+│   └── data_dictionary.md           # (Optional) Description of data fields
+│
+├── .gitignore                       # Files to ignore (e.g., venv, __pycache__, local data)
+├── requirements.txt                 # Python dependencies (pandas, sqlalchemy, psycopg2)
+├── LICENSE
+└── README.md                        # Project Overview
 ```
 ## ⚙️ Installation & Usage
 To replicate this analysis, follow these steps:
