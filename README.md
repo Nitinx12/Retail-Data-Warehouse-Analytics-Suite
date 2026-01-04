@@ -9,6 +9,14 @@ The Retail Data Warehouse & Analytics Suite is an end-to-end data engineering an
 
 The project solves the challenge of deriving actionable business insights from raw CSV logs. It implements a Python-based ETL (Extract, Transform, Load) pipeline to populate a PostgreSQL data warehouse and utilizes advanced SQL scripting to generate key performance indicators (KPIs), such as Year-Over-Year growth, customer lifecycle value, and inventory cost segmentation.
 
+## 🚀 Architecture & Workflow
+The project follows a standard Extract, Load, Transform (ELT/ETL) and Visualization workflow:
+
+1.  **Data Ingestion (ETL):** -   Raw data (`.csv`) is loaded into a PostgreSQL database using Python (`Pandas` & `SQLAlchemy`).
+2.  **Data Warehousing:** -   A relational schema is created with `customers`, `products`, and `sales` tables.
+3.  **Data Analysis (SQL):** -   Complex SQL queries are written to solve specific business problems (e.g., YoY growth, running totals, segmentation).
+4.  **Reporting (Power BI):** -   A dynamic dashboard visualizes the SQL outputs to track Customer Segments, Sales Trends, and Product Mix.
+
 ### ✨ Built With
 * Python
 * SQL (PostgreSQL)
