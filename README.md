@@ -23,22 +23,13 @@ The project follows a standard Extract, Load, Transform (ELT/ETL) and Visualizat
 * **Visualization:** Power BI, Matplotlib/Seaborn (for EDA)
 * **Environment:** Jupyter Notebook, VS Code
 
-### ✨ Built With
-* Python
-* SQL (PostgreSQL)
-* Pandas
-* Sqlalchemy
-* Jupyter Notebook
-* Matplotlib & Seaborn
-* Duckdb
+## Key Business Insights & SQL Logic
 
-## 🚀 Features
-
-- **Automated Data Ingestion:** A robust Python ETL script utilizing Pandas and SQLAlchemy to ingest raw CSV data into a relational database.
+- **Goal:** Evaluate products against historical averages and track Year-Over-Year (YoY) trends.
   
-- **Advanced Sales Analytics:** Implementation of Window Functions and Common Table Expressions (CTEs) to calculate Month-Over-Month (MoM) growth and Year-Over-Year (YoY) trends.
+- **Technique:** Used Window Functions (AVG() OVER, LAG() OVER) to compare current sales vs. previous year and average sales.
 
-- **Customer Segmentation:** Logic to profile customers based on purchasing behavior, age groups, and lifecycle span (VIP vs. New vs. Regular).
+- **Outcome:** Identified products performing "Above Average" and flagged those with declining sales momentum.
 
 - **Inventory Optimization:** Price bracketing and segmentation analysis to assist in inventory distribution strategies.
 
