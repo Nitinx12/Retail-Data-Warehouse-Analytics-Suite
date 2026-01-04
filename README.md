@@ -17,6 +17,13 @@ The project follows a standard Extract, Load, Transform (ELT/ETL) and Visualizat
 3.  **Data Analysis (SQL):** -   Complex SQL queries are written to solve specific business problems (e.g., YoY growth, running totals, segmentation).
 4.  **Reporting (Power BI):** -   A dynamic dashboard visualizes the SQL outputs to track Customer Segments, Sales Trends, and Product Mix.
 
+## 🛠️ Tech Stack
+* **Language:** Python (Pandas, SQLAlchemy)
+* **Database:** PostgreSQL
+* **Query Language:** SQL (Window Functions, CTEs, Aggregations)
+* **Visualization:** Power BI, Matplotlib/Seaborn (for EDA)
+* **Environment:** Jupyter Notebook, VS Code
+
 ### ✨ Built With
 * Python
 * SQL (PostgreSQL)
