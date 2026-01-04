@@ -14,6 +14,9 @@ The project solves the challenge of deriving actionable business insights from r
 * SQL (PostgreSQL)
 * Pandas
 * Sqlalchemy
+* Jupyter Notebook
+* Matplotlib & Seaborn
+* Duckdb
 
 ## 🚀 Features
 
