@@ -102,7 +102,23 @@ To replicate this analysis, follow these steps:
         ```bash
        Load_Data_in_database.py
         ```
-4.  **Run Analysis:**
+4.  **Install dependencies**
+    Create a `requirements.txt` file with the following content:
+    ```
+    pandas
+    sqlalchemy
+    psycopg2-binary
+    matplotlib
+    seaborn
+    jupyter
+    duckdb
+    ```
+    Then, run the installation command:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5.  **Run Analysis:**
     * **For SQL Analysis:** Execute the queries in `Customers_report.sql` using a SQL client like DBeaver, pgadmin4 or `psql`.
 ```sql
 CREATE VIEW Customers_report AS 
