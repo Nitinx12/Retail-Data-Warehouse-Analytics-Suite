@@ -3,8 +3,10 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue) ![Version](https://img.shields.io/badge/version-1.0.0-green)
 
-## 📖 About The Project
-This project is an end-to-end data analytics solution designed to transform raw retail data into actionable business insights. It involves building a data warehouse using **PostgreSQL**, performing advanced analytical queries with **SQL**, and visualizing key performance indicators (KPIs) using **Power BI**.
+## About The Project
+This project simulates a real-world data analytics workflow, delivering an end-to-end data analyst solution that transforms raw retail data into actionable business insights
+
+It includes building a data warehouse using `PostgreSQL`, performing advanced SQL-based analysis, and visualizing key performance indicators (KPIs) through interactive `Power BI` dashboards.
 
 The goal was to answer critical business questions regarding product performance, customer segmentation, and sales momentum.
 
