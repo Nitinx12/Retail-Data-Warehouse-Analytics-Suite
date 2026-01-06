@@ -31,11 +31,7 @@ The goal was to answer critical business questions regarding product performance
 
 - **Goal:** How did our sales grow or decline compared to the previous month?.
   
-- **Technique:** Used a CTE to aggregate transactional sales data into monthly totals.
-
-Applied window functions (LAG) to compare each month’s sales with the previous month.
-
-Implemented conditional and null-handling logic to safely calculate month-over-month growth rates.
+- **Technique:** This query uses a Common Table Expression (CTE) to aggregate raw sales data into monthly totals, creating a clean time-series dataset. It then applies a window function (LAG) to retrieve the previous month’s sales for comparison. Finally, conditional and null-handling logic is used to calculate a safe and accurate month-over-month growth rate
 
 - **Outcome:** Identified products performing "Above Average" and flagged those with declining sales momentum.
 
