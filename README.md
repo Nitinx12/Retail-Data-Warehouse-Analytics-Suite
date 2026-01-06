@@ -27,9 +27,9 @@ The goal was to answer critical business questions regarding product performance
 
 ## Key Business Insights & SQL Logic
 
-**1.Product Performance & Trends**
+**1.Changes Over time**
 
-- **Goal:** Evaluate products against historical averages and track Year-Over-Year (YoY) trends.
+- **Goal:** How did our sales grow or decline compared to the previous month?.
   
 - **Technique:** Used Window Functions (AVG() OVER, LAG() OVER) to compare current sales vs. previous year and average sales.
 
