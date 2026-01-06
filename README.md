@@ -34,7 +34,9 @@ The goal was to answer critical business questions regarding product performance
 - **Technique:** This query uses a Common Table Expression (CTE) to aggregate raw sales data into monthly totals, creating a clean time-series dataset. It then applies a window function (LAG) to retrieve the previous month’s sales for comparison. Finally, conditional and null-handling logic is used to calculate a safe and accurate month-over-month growth rate
 
 - **Outcome:** strong spikes in mid-2011, mid-2012, and 2013), while negative values highlight periods of decline or seasonality (such as early 2012 and early 2014). Overall, the result allows you to clearly track trends, volatility, and major inflection points in sales performance across years.
-```
+
+**SQL Query:**
+```sql
 WITH months AS (
 	SELECT
 		TO_CHAR(order_date, 'YYYY-MM') AS sales_month,
