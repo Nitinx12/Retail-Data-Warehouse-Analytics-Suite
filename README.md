@@ -19,14 +19,12 @@ The goal was to answer critical business questions regarding product performance
 * Matplotlib & Seaborn
 * Duckdb
 
-## Architecture & Workflow
-The project follows a standard Extract, Load, Transform (ELT/ETL) and Visualization workflow:
+## 🏗 Architecture & Workflow
 
-1.  **Data Ingestion (ETL):** -   Raw data (`.csv`) is loaded into a PostgreSQL database using Python (`Pandas` & `SQLAlchemy`).
-2.  **Data Warehousing:** -   A relational schema is created with `customers`, `products`, and `sales` tables.
-3.  **Data Analysis (SQL):** -   Complex SQL queries are written to solve specific business problems (e.g., YoY growth, running totals, segmentation).
-4.  **Reporting (Power BI):** -   A dynamic dashboard visualizes the SQL outputs to track Customer Segments, Sales Trends, and Product Mix.
-
+1.  **Ingest (ETL):** Raw data (`.csv`) is processed and loaded into a PostgreSQL database using Python scripts.
+2.  **Store:** A relational schema is created with `customers`, `products`, and `sales` tables.
+3.  **Analyze (SQL):** Complex SQL queries generate insights on customer behavior and sales trends.
+4.  **Visualize:** A Power BI dashboard consumes the SQL outputs to present data visually.
 ## Tech Stack
 * **Language:** Python (Pandas, SQLAlchemy)
 * **Database:** PostgreSQL
