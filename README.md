@@ -31,7 +31,11 @@ The goal was to answer critical business questions regarding product performance
 
 - **Goal:** How did our sales grow or decline compared to the previous month?.
   
-- **Technique:** Used Window Functions (AVG() OVER, LAG() OVER) to compare current sales vs. previous year and average sales.
+- **Technique:** Used a CTE to aggregate transactional sales data into monthly totals.
+
+Applied window functions (LAG) to compare each month’s sales with the previous month.
+
+Implemented conditional and null-handling logic to safely calculate month-over-month growth rates.
 
 - **Outcome:** Identified products performing "Above Average" and flagged those with declining sales momentum.
 
