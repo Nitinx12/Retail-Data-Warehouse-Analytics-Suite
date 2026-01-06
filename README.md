@@ -33,7 +33,31 @@ The goal was to answer critical business questions regarding product performance
   
 - **Technique:** This query uses a Common Table Expression (CTE) to aggregate raw sales data into monthly totals, creating a clean time-series dataset. It then applies a window function (LAG) to retrieve the previous month’s sales for comparison. Finally, conditional and null-handling logic is used to calculate a safe and accurate month-over-month growth rate
 
-- **Outcome:** Identified products performing "Above Average" and flagged those with declining sales momentum.
+- **Outcome:** strong spikes in mid-2011, mid-2012, and 2013), while negative values highlight periods of decline or seasonality (such as early 2012 and early 2014). Overall, the result allows you to clearly track trends, volatility, and major inflection points in sales performance across years.
+sql
+```
+WITH months AS (
+	SELECT
+		TO_CHAR(order_date, 'YYYY-MM') AS sales_month,
+		SUM(sales_amount) AS current_month_sales
+	FROM sales
+	WHERE order_date IS NOT NULL
+	GROUP BY 1
+)
+	SELECT
+		sales_month,
+		current_month_sales,
+		COALESCE(previous_month_sales, 0) AS previous_month_sales,
+		CASE
+			WHEN previous_month_sales IS NULL THEN 0
+			ELSE ROUND((current_month_sales - previous_month_sales) / previous_month_sales * 100,2)
+		END AS growth_rate
+	FROM(SELECT
+			sales_month,
+			current_month_sales,
+			LAG(current_month_sales) OVER(ORDER BY sales_month) AS previous_month_sales
+		FROM months) AS X
+```
 
 **2.Customer Segmentation**
 
