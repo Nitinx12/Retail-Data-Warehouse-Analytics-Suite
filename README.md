@@ -62,11 +62,41 @@ WITH months AS (
 
 **2.Customer Segmentation**
 
-- **Goal:** Profile customers based on purchasing behavior
+- **Goal:** classify customers into value-based segments (VIP, Regular, New) using their spending and lifespan, and count how many customers belong to each segment.
 
-- **Logic:** `VIP` High spending (> avg) AND recent activity, `Regular` Consistent shoppers, `New` First purchase within the last 30-90 days
+- **Logic:** The logic used in this query is customer segmentation based on behavioral metrics. It first aggregates sales data per customer to calculate total spending and customer lifespan, then applies rule-based conditional logic (CASE statements) to assign each customer to a segment (VIP, Regular, or New). Finally, it summarizes the results by counting customers in each segment to support customer value analysis.
 
-- **Outcome:** The `Power BI` dashboard highlights that the 50+ Age Group contributes significantly to total revenue.
+- **Outcome:** The result shows that most customers are New, while a smaller portion are Regular, and the smallest but most valuable group are VIP customers.
+
+**SQL Query:**
+```sql
+WITH Customer_spending AS (
+	SELECT
+		C.customer_key,
+		SUM(S.sales_amount) AS total_spending,
+		MIN(S.order_date) AS first_order,
+		MAX(S.order_date) AS last_order,
+		(EXTRACT(YEAR FROM AGE(MAX(S.order_date),MIN(S.order_date))) * 12
+		+EXTRACT(MONTH FROM AGE(MAX(S.order_date),MIN(S.order_date)))) AS life_span
+	FROM sales AS S
+	LEFT JOIN customers AS C 
+	ON C.customer_key = S.customer_key
+	GROUP BY 1
+)
+	SELECT
+		customer_segment,
+		COUNT(customer_key) AS total_customers
+	FROM(SELECT
+			customer_key,
+			CASE
+				WHEN life_span >= 12 AND total_spending > 5000 THEN 'VIP'
+				WHEN life_span >= 12 AND total_spending <= 5000 THEN 'Regular'
+				ELSE 'New'
+			END AS customer_segment
+		FROM Customer_spending) AS X
+	GROUP BY 1
+	ORDER BY 2 DESC
+```
 
 ## Project Structure
 
