@@ -10,7 +10,6 @@ It includes building a data warehouse using `PostgreSQL`, performing advanced SQ
 
 The goal was to answer critical business questions regarding product performance, customer segmentation, and sales momentum.
 
-
 ### Built With
 * Python
 * SQL (PostgreSQL)
@@ -19,18 +18,12 @@ The goal was to answer critical business questions regarding product performance
 * Matplotlib & Seaborn
 * Duckdb
 
-## 🏗 Architecture & Workflow
+## Architecture & Workflow
 
 1.  **Ingest (ETL):** Raw data (`.csv`) is processed and loaded into a PostgreSQL database using Python scripts.
 2.  **Store:** A relational schema is created with `customers`, `products`, and `sales` tables.
 3.  **Analyze (SQL):** Complex SQL queries generate insights on customer behavior and sales trends.
 4.  **Visualize:** A Power BI dashboard consumes the SQL outputs to present data visually.
-## Tech Stack
-* **Language:** Python (Pandas, SQLAlchemy)
-* **Database:** PostgreSQL
-* **Query Language:** SQL (Window Functions, CTEs, Aggregations)
-* **Visualization:** Power BI, Matplotlib/Seaborn (for EDA)
-* **Environment:** Jupyter Notebook, VS Code
 
 ## Key Business Insights & SQL Logic
 
